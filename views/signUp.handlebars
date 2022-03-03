@@ -1,4 +1,4 @@
-<form id="signUpForm">
+{{! <form id="signUpForm">
   <div class="form-group">
     <label for="username">Username</label>
     <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
@@ -11,5 +11,39 @@
   <button type="submit" class="btn btn-primary">Submit</button>
   <a href="/login">already signed up? </a>
 </form>
+
+<script src="/js/signUp.js"></script>
+ }}
+
+<div class="container">
+  <div class="forms">
+    <div class="form-content">
+      <div class="signup-form">
+        <div class="title">Signup</div>
+        <form action="#">
+          <div class="input-boxes">
+            <div class="input-box">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="button input-box">
+              <input type="submit" value="Sumbit" />
+            </div>
+            <div class="text sign-up-text">Already have an account?
+              <label for="flip">Login now</label></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="/js/signUp.js"></script>
