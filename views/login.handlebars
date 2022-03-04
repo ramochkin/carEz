@@ -1,15 +1,58 @@
-<form id="loginForm">
+{{!-- <form id="loginForm">
   <div class="form-group">
     <label for="username">Username</label>
-    <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <input
+      type="text"
+      class="form-control"
+      id="username"
+      aria-describedby="emailHelp"
+    />
+    <small id="emailHelp" class="form-text text-muted">We'll never share your
+      email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" class="form-control" id="password">
+    <input type="password" class="form-control" id="password" />
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
   <a href="/signup">Sign Up instead</a>
 </form>
+ --}}
+
+
+
+
+<div class="container">
+  <div class="forms">
+    <div class="form-content">
+      <div class="login-form">
+        <div class="title">Login</div>
+        <form action="#">
+          <div class="input-boxes">
+            <div class="input-box">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="button input-box">
+              <button type="submit" value="Sumbit">Submit</button>
+            </div>
+            
+            <a type="button" href="/signUp">Sign up here</a>
+              
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <script src="/js/login.js"></script>
