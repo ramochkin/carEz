@@ -1,4 +1,4 @@
-const { Brand } =require('../models');
+const { Brands } =require('../models');
 
 const brandData = [
     {
@@ -12,6 +12,6 @@ const brandData = [
     },
 ];
 
-const seedBrands = () => Brand.bulkCreate(brandData);
+const seedBrands = () => Brands.bulkCreate(brandData);
 
 module.exports = seedBrands;
