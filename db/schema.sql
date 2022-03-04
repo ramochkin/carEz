@@ -10,6 +10,7 @@ CREATE TABLE brands (
 CREATE TABLE models (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     modelName VARCHAR(100),
+    carValue INT,
     brandId INT,
     FOREIGN KEY (brandId)
     REFERENCES brands(id)
