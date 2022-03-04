@@ -46,3 +46,25 @@ User.init(
 )
 
 module.exports = User
+
+
+/*
+
+    password123
+
+    hashed ---> H12345ABC
+
+
+
+
+    --> login
+    user
+    password123
+    hased ---> H12345ABC
+
+    H12345ABC == H12345ABC ??
+
+
+
+
+*/
