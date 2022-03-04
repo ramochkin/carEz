@@ -15,23 +15,23 @@ router.get('/signup', (req,res) => {
 });
 
 
-switch(answer.getBrand){
-  case "Acura":
-    answer.getBrand = 1;
-    break;
-    case "Alfa-Romeo":
-    answer.getBrand = 2;
-    break;
-    case "Audi":
-    answer.getBrand = 3;
-    break;
-    case "Aston-Martin":
-    answer.getBrand = 4;
-    break;
-    case "Bentley":
-    answer.getBrand = 5;
-    break;
+// switch(answer.getBrand){
+//   case "Acura":
+//     answer.getBrand = 1;
+//     break;
+//     case "Alfa-Romeo":
+//     answer.getBrand = 2;
+//     break;
+//     case "Audi":
+//     answer.getBrand = 3;
+//     break;
+//     case "Aston-Martin":
+//     answer.getBrand = 4;
+//     break;
+//     case "Bentley":
+//     answer.getBrand = 5;
+//     break;
    
-}
+// }
 
 module.exports = router;
