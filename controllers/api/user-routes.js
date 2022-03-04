@@ -38,7 +38,7 @@ router.post('/login', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try {
-    const newUser = User.create(req.body)
+    const newUser = await User.create(req.body)
 
     req.session.save(() => {
         req.session.user_id = newUser.id;
