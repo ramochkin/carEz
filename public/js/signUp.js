@@ -1,9 +1,7 @@
- const form = document.getElementById('signUpForm')
-
 async function handleSignUp(event) {
     event.preventDefault()
     const username = document.getElementById('username').value
-   
+
     const password = document.getElementById('password').value
     console.log(username)
     if (username && password) {
@@ -22,4 +20,4 @@ async function handleSignUp(event) {
     }
 };
 
-form.addEventListener('submit', handleSignUp)
+document.querySelector('#signUpForm').addEventListener('submit', handleSignUp)
