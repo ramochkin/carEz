@@ -1,4 +1,4 @@
-const { Model } =require('../models');
+const { Models } =require('../models');
 
 const modelData = [
     {
@@ -59,6 +59,6 @@ const modelData = [
     },
 ];
 
-const seedModels = () => Model.bulkCreate(modelData);
+const seedModels = () => Models.bulkCreate(modelData);
 
 module.exports = seedModels;
