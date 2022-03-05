@@ -9,21 +9,25 @@ Models.init(
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
+            primaryKey: true,
         },
-        modelName: {
+        model_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        brandId:{
+        brand_id:{
             type: DataTypes.INTEGER,
             references: {
-                model: "Brands",
+                model: "brands",
                 key: 'id'
             }
         }
     },
     {
-        sequelize
+        sequelize,
+        underscored: true,
+        modelName: 'models',
+        freezeTableName: true,
     }
 )
 

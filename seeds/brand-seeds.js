@@ -2,13 +2,13 @@ const { Brands } =require('../models');
 
 const brandData = [
     {
-        brandName: 'Acura',
+        brand_name: 'Acura',
     },
     {
-        brandName: 'Alfa-Romeo',
+        brand_name: 'Alfa-Romeo',
     },
     {
-        brandName: 'Aston-Martin',
+        brand_name: 'Aston-Martin',
     },
 ];
 
