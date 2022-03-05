@@ -2,19 +2,19 @@ const router = require('express').Router();
 
 router.get('/', async (req, res) => {
   // Send the rendered Handlebars.js template back as the response
-  try{
-    const brandData=  await brands.findAll({
-      include: [Model]
-    })
+  // try{
+  //   const brandData=  await brands.findAll({
+  //     include: [Model]
+  //   })
 
-    const brands =  brandData.map((brand)=> brand.get({plain: true}))
+  //   const brands =  brandData.map((brand)=> brand.get({plain: true}))
 
-    res.render('homepage', {logged_in: req.session.logged_in, brands});
-  }catch(err){
+  //   res.render('homepage', {logged_in: req.session.logged_in, brands});
+  // }catch(err){
+  //   res.render('login')
 
-  }
-  
-
+  // }
+  res.render('dashboard')
 });
 
 router.get('/login', (req,res) => {
