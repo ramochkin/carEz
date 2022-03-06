@@ -1,0 +1,18 @@
+<div class="posts list-group">
+  {{#each brands}}
+    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+      <span>{{brandName}}</span>
+    </a>
+  {{/each}}
+</div>
+
+<div class="posts list-group">
+  {{#each posts}}
+  <p>sfsndfasdfnshsfeshehes</p>
+  {{!-- posts title and date --}}
+    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+      <span>{{title}}</span>
+      <span>{{format_date createdAt}}</span>
+    </a>
+  {{/each}}
+</div>

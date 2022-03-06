@@ -1,5 +1,5 @@
-/* Google Font Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Google Font Link
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
 *{
   margin: 0;
   padding: 0;
@@ -26,4 +26,27 @@
 #loginsignuph1{
   text-align: center;
   margin-top: 5%;
+}
+
+nav{
+  display: inline,;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: 2px red solid;
+}
+
+.hero{
+  border: 2px blue solid;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+main{
+  display: block;
+  margin: 50px;
+  padding: 50px;
+  border: 2px green solid;
+
 }

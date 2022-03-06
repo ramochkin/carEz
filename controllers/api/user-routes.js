@@ -29,6 +29,8 @@ router.post('/login', async (req, res) => {
             req.session.logged_in = true;
 
             res.json(userData);
+            console.log('____________________')
+            console.log(req.session);
         });
 
     } catch (err) {
