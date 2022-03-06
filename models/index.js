@@ -2,7 +2,7 @@ const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
 const Brands = require('./Brands');
-const Models = require('./Models')
+
 
 // Comment.belongsTo(User, {
 //     foreignKey: 'user_id',
@@ -52,16 +52,11 @@ Comment.belongsTo(Post, {
     onDelete: 'CASCADE'
 })
 
-Brands.hasMany(Models, {
-    foreignKey: 'brand_id',
-    onDelete: 'CASCADE'
-})
-
-Models.belongsTo(Brands, {
-    foreignKey: 'brand_id',
+Brands.hasMany(Post, {
+    foreignKey: 'post_id',
     onDelete: 'CASCADE'
 })
 
 
-module.exports = {User, Post, Comment, Brands, Models}
+module.exports = {User, Post, Comment, Brands}
 
