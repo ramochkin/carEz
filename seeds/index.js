@@ -9,8 +9,8 @@ const seedAll = async () => {
   await seedBrands();
   console.log('\n----- BRANDS SEEDED -----\n');
 
-  await seedModels();
-  console.log('\n----- MODELS SEEDED -----\n');
+  // await seedModels();
+  // console.log('\n----- MODELS SEEDED -----\n');
 
   await seedPost();
   console.log('\n----- POSTS SEEDED -----\n');
