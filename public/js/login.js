@@ -17,6 +17,7 @@ async function handleLogin(event) {
 
     if (response.ok) {
       document.location.replace('/');
+      console.log('your logged in')
     } else {
       alert('Failed to log in');
     }

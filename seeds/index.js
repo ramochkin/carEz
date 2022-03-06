@@ -1,6 +1,7 @@
 const seedBrands = require('./brand-seeds');
 const seedModels = require('./model-seeds');
 const sequelize = require('../config/connection');
+const seedPost = require('./posts-seeds');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
@@ -10,6 +11,10 @@ const seedAll = async () => {
 
   await seedModels();
   console.log('\n----- MODELS SEEDED -----\n');
+
+  await seedPost();
+  console.log('\n----- POSTS SEEDED -----\n');
+
 
 
   process.exit(0);

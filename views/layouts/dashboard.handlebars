@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,29 +8,30 @@
   <title>CarEz</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
-{{!-- navbar --}}
+
 <body class="flex-column min-100-vh">
+  {{!-- navbar --}}
   <nav class="navbar">
-    <ul>
+    <ul class="flex-row">
       <li class="li-inline nav-item"><a href="/">Home</a></li>
       <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-      <li class="li-inline nav-item"><a href="/login">Login</a></li>
       <li class="li-inline nav-item"><a href="/logout">Logout</a></li>
     </ul>
   </nav>
   {{!-- header/title --}}
   <header class="hero">
-    <h1 class="app-title"><a href="/">CarEz</a></h1>
+    <h1 class="app-title"><a href="/dashboard">Your Dashboard</a></h1>
   </header>
 {{!-- body --}}
   <main class="col-auto">
     {{{body}}}
   </main>
 {{!-- footer --}}
-  <footer class="flex-row justify-center">
-    &copy; CarEz Inc.
+  <footer class="footer flex-row justify-center">
+    <a href="/dashboard/new">➕ New Post</a>
   </footer>
 </body>
 
-</html>
 <script src="/js/logout.js"></script>
+
+</html>
