@@ -2,15 +2,15 @@
   <article class="card">
     <div class="card-header flex-row justify-space-between">
       {{!-- title --}}
-      <h2>{{post.title}}</h2>
+      <h2>{{post.post_title}}</h2>
       {{!-- user and date --}}
       <div>
-        Posted by {{post.User.username}} on {{format_date post.createdAt}}
+        Posted by {{post.user.username}} on {{format_date post.createdAt}}
       </div>
     </div>
     {{!-- post body --}}
     <div class="card-body">
-      {{post.body}}
+      {{post.content}}
     </div>
   </article>
 {{!-- comments --}}
@@ -25,11 +25,11 @@
           <div>
             {{!-- comment body --}}
             <p>
-              {{body}}
+              {{comment_content}}
             </p>
             {{!-- user and date --}}
             <p>
-              &mdash; {{User.username}}, {{format_date createdAt}}
+              &mdash; {{user.username}}, {{format_date createdAt}}
             </p>
           </div>
         {{/each}}
@@ -37,6 +37,7 @@
     </section>
   {{/if}}
 {{!-- new comment --}}
+{{#if logged_in}}
   <form id="new-comment-form" class="card">
     <div class="card-header">
       <h3>Add New Comment</h3>
@@ -52,6 +53,7 @@
       <button type="submit" class="btn">Submit</button>
     </div>
   </form>
+{{/if}}
 </div>
 
 <script src="/js/comment.js"></script>

@@ -38,6 +38,11 @@
         </li>
         {{/if}}
       </ul>
+ {{#if logged_in}}
+ <div class="footer flex-row justify-center">
+        <a href="/dashboard/new">➕ New Post</a>
+  </div>
+   {{/if}}
     </div>
   </nav>
   {{{body}}}

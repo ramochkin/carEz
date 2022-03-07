@@ -3,9 +3,7 @@ const { Post, Brands } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
-    console.log('________________________')
-    console.log(req.session);
-    console.log(req.session.user_id);
+
     try {
       const postData = await Post.findAll({
         where: {
@@ -17,19 +15,18 @@ router.get('/', withAuth, async (req, res) => {
       const posts = postData.map((post) => post.get({ plain: true }));
   
       res.render('dashboard-content', {
-        layout: 'dashboard',
+        logged_in: req.session.logged_in,
         posts,
       });
     } catch (err) {
-    console.log('IN catch statment')
-    console.log(err)
+
       res.redirect('login');
     }
   });
   // get new posts, login protected
   router.get('/new', withAuth, (req, res) => {
     res.render('new-post', {
-      layout: 'dashboard',
+     logged_in: req.session.logged_in
     });
   });
 
@@ -45,7 +42,7 @@ router.get('/', withAuth, async (req, res) => {
       const brands = brandsData.map((brand) => brand.get({ plain: true }));
   
       res.render('dashboard-content', {
-        layout: 'dashboard',
+        logged_in: req.session.logged_in,
         brands,
       });
     } catch (err) {
@@ -62,7 +59,7 @@ router.get('/', withAuth, async (req, res) => {
         const post = postData.get({ plain: true });
   
         res.render('edit-post', {
-          layout: 'dashboard',
+          logged_in: req.session.logged_in,
           post,
         });
       } else {
