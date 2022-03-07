@@ -28,11 +28,35 @@
   margin-top: 5%;
 }
 
+body {
+  height: 3000px;
+ background: linear-gradient(55deg, #636363 0%, #d0d0d0 51%, #eeeded 85%); 
+}
 
-/* main{
+.card{
+  opacity: .7;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  width: 75%;
+  justify-content: center;
   display: block;
-  margin: 50px;
-  padding: 50px;
-  border: 2px green solid;
+  border: rgb(116, 116, 116) 1px solid;
+}
 
-} */
+.carSilhouette{
+  max-width: 100%;
+  opacity: 0.2;
+  position: absolute;
+  margin-top: 7%;
+}
+
+.info{ 
+  width: 75%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2%;
+  font-size: large;
+
+}
