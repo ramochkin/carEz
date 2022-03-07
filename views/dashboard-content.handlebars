@@ -1,18 +1,18 @@
-<div class="posts list-group">
-  {{#each brands}}
-    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
-      <span>{{brandName}}</span>
-    </a>
-  {{/each}}
-</div>
-
-<div class="posts list-group">
+<div class="posts">
   {{#each posts}}
-  <p>sfsndfasdfnshsfeshehes</p>
-  {{!-- posts title and date --}}
-    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
-      <span>{{title}}</span>
-      <span>{{format_date createdAt}}</span>
-    </a>
+  <article class="card">
+    <div class="card-header flex-row justify-space-between">
+      <h2 >
+        <a href="/dashboard/edit/{{id}}">{{post_title}}</a>
+      </h2>
+      <p href="/post/{{user_id}}">{{content}}</p>
+      <div>
+        Posted by {{User.username}} on {{format_date createdAt}}
+      </div>
+    </div>
+    <div class="card-body">
+      {{body}}
+    </div>
+  </article>
   {{/each}}
 </div>

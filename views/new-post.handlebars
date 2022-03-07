@@ -6,14 +6,15 @@
 
   {{!-- new post title --}}
   <form id="new-post-form" class="card-body">
-{{>search}}
-
-{{!-- body --}}
+    <div id="post_title">
+      {{>search}}
+    </div>
+    {{!-- body --}}
     <label class="form-label" for="post-body">Content</label>
-    <textarea name="post-body" class="form-input"></textarea>
-{{!-- create button --}}
-    <button type="submit" class="btn">Create</button>
+    <textarea name="post-body" id= "new-post-content" class="form-input"></textarea>
+    {{!-- create button --}}
+    <button id="create"type="submit" class="btn">Create</button>
   </form>
 </div>
 
-<script src="/js/new.js"></script>
+<script src="/js/post.js"></script>
