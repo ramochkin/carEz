@@ -29,7 +29,7 @@
 }
 
 body {
-  /* height: 3000px; Used to enable scrolling */
+  height: 3000px;
  background: linear-gradient(55deg, #636363 0%, #d0d0d0 51%, #eeeded 85%); 
 }
 
@@ -54,7 +54,6 @@ body {
 
 .info{ 
   width: 75%;
-  height: 100%;
   position: relative;
   margin: 0 auto;
   margin-top: 2%;
