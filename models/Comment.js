@@ -5,21 +5,21 @@ class Comment extends Model { }
 
 Comment.init(
     {
-        id: {
-            type: DataTypes.INTEGER,
-            autoIncrement: true,
-            primaryKey: true,
-        },
+        // id: {
+        //     type: DataTypes.INTEGER,
+        //     autoIncrement: true,
+        //     primaryKey: true,
+        // },
         comment_content: {
             type: DataTypes.STRING
         },
-        user_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: "user",
-                key: 'id'
-            }
-        },
+        // user_id: {
+        //     type: DataTypes.INTEGER,
+        //     references: {
+        //         model: "user",
+        //         key: 'id'
+        //     }
+        // },
         // post_id: {
         //     type: DataTypes.INTEGER,
         //     references: {
@@ -30,9 +30,9 @@ Comment.init(
     },
     {
         sequelize,
-        underscored: true,
-        modelName: 'comment',
-        freezeTableName: true,
+        // underscored: true,
+        // modelName: 'comment',
+        // freezeTableName: true,
     }
 )
 
