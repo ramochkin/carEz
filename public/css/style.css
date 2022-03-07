@@ -28,25 +28,11 @@
   margin-top: 5%;
 }
 
-nav{
-  display: inline,;
-  float: left;
-  margin: 0;
-  padding: 0;
-  border: 2px red solid;
-}
 
-.hero{
-  border: 2px blue solid;
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-
-main{
+/* main{
   display: block;
   margin: 50px;
   padding: 50px;
   border: 2px green solid;
 
-}
+} */
