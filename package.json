@@ -11,7 +11,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rogermle/project-2-starter-template.git"
-    
   },
   "keywords": [],
   "author": "",
@@ -28,6 +27,7 @@
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
     "sequelize": "^6.17.0"
   }
 }
