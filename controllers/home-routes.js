@@ -52,7 +52,7 @@ router.get('/signup', (req, res) => {
     return;
   }
 
-  res.render('signup');
+  res.render('signUp');
 });
 
 module.exports = router;
