@@ -23,9 +23,5 @@ async function handleLogin(event) {
     }
   }
 };
-<script type="text/javascript">
-  var onloadCallback = function() {
-    alert("grecaptcha is ready!");
-  };
-</script>
+
 document.querySelector('#loginForm').addEventListener('submit', handleLogin)
