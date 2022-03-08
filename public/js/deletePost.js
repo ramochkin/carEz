@@ -1,36 +1,18 @@
 async function deletePost(event) {
     event.preventDefault()
-    
+
     const postId = document.getElementById('post-id').value
     console.log(postId.value)
     const response = await fetch(`/api/post/${postId}`, {
         method: 'DELETE'
     })
-    
-    if (response.ok) {
-                document.location.replace('/dashboard');
-            } else {
-                alert('comment not deleted');
-            }
-    // const post_title = .value
 
-    // console.log(post_title,content)
-    
+    if (response) {
+        document.location.replace('/dashboard');
+    } else {
+        alert('Post not deleted');
+    }
 
-    // if (post_title && content) {
-    //     const response = await fetch('/api/post/new', {
-    //         method: 'POST',
-    //         body: JSON.stringify({ post_title, content }),
-    //         headers: { 'Content-Type': 'application/json' },
-    //     });
-    //     console.log(response)
-        
-    //     if (response.ok) {
-    //         // document.location.replace('/');
-    //     } else {
-    //         alert('comment not created');
-    //     }
-    // }
 };
 
 
