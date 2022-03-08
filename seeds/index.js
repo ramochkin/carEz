@@ -8,12 +8,8 @@ const seedAll = async () => {
   console.log('\n----- DATABASE SYNCED -----\n');
   await seedBrands();
   console.log('\n----- BRANDS SEEDED -----\n');
-
-  // await seedModels();
-  // console.log('\n----- MODELS SEEDED -----\n');
-
-  // await seedPost();
-  // console.log('\n----- POSTS SEEDED -----\n');
+  await seedPost();
+  console.log('\n----- POSTS SEEDED -----\n');
 
 
 
